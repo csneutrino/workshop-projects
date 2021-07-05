@@ -1,4 +1,6 @@
-# Day 2
+# Summary of Day 2
+
+> By Roshan Acharya
 
 - DOCTYPE
 
