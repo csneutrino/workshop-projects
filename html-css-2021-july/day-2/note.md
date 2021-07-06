@@ -110,7 +110,7 @@
 
   A paragraph always starts on a new line, and is usually a block of text.
 
-  The HTML <p> element defines a paragraph.
+  `<p>` element defines a paragraph.
 
   A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
 
@@ -163,7 +163,7 @@
   HTML allows attribute values without quotes.
 
   ```html
-  <tagname attrname="attrvalue"></tagname>
+  <tagname attrname=attrvalue></tagname>
   ```
 
   However, we recommend quoting attribute values. Also, it will not work when the value has space. Only `attrvalue` will be taken as a value. `attrvalue2` will be taken as another attribute.
