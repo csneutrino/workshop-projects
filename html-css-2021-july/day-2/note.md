@@ -169,7 +169,7 @@
   However, we recommend quoting attribute values. Also, it will not work when the value has space. Only `attrvalue` will be taken as a value. `attrvalue2` will be taken as another attribute.
 
   ```html
-  <tagname attrname="attrvalue1" attrvalue2></tagname>
+  <tagname attrname=attrvalue1 attrvalue2></tagname>
   ```
 
   Correct way will be
