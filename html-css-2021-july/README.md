@@ -35,6 +35,7 @@
     </summary>
 
 - `day-1`: Roadmap
+- `day-2`: Diving in CSS. Selectors,comments, box model, margin, paddings, background, lists, links, tables    
 </details>
 
 ---
