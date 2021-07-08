@@ -1,0 +1,172 @@
+/* html {
+  font-size: 16px;
+} */
+/* Using HTML tag selectors */
+/* div {
+  padding: 50px;
+  border: 5px solid red;
+}
+
+article {
+  border: 5px dashed blue;
+}
+p {
+  border: 5px dashed yellow;
+} */
+
+/* Using HTML class selectors */
+/* 
+#firstDiv {
+  border: 5px solid blue;
+} */
+/* 
+.division-1,
+.division-2 {
+  padding: 50px;
+  margin: 5px;
+  border: 5px solid red;
+}
+.highlight {
+  color: purple;
+} */
+
+/* border */
+
+/* .giveBorder {
+  width: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+  border-top-color: blue;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+} */
+
+/* combinator selectors using '>' */
+
+/* .giveBorder {
+  border: 5px dashed green;
+} */
+/* .giveBorder > div {
+  border: 1px solid red;
+  width: 10%;
+} */
+
+/* Background */
+
+/* body {
+  height: 50000px;
+  width: 5000px;
+  background-image: url(../assets/mario-bgimage.png);
+  background-repeat: no-repeat;
+  background-size: 50vh;
+  opacity: 0.1;
+  background-position: right top;
+  background-attachment: scroll;
+} */
+
+/* Links */
+
+/* .link-1 {
+  text-decoration: none;
+}
+
+.link-1:visited {
+  text-decoration: none;
+  color: red;
+}
+.link-1:hover {
+  text-decoration: underline;
+  color: yellow;
+} */
+
+/* Lists */
+
+/* .ordered {
+  background-color: yellowgreen;
+  list-style-type: lower-latin;
+  list-style-position: outside;
+}
+.ordered > li,
+.unordered > li {
+  background-color: rgb(74, 90, 42);
+  margin: 5px;
+}
+.unordered {
+  background-color: green;
+  list-style-type: circle;
+  list-style-image: url(../assets/sqpurple.gif);
+  list-style-position: inside;
+  list-style: circle inside url(../assets/sqpurple.gif);
+} */
+
+/* Tables */
+
+/* 
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+} */
+
+/* .container-1 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 5px;
+  border: 3px solid green;
+  margin: 1rem;
+  z-index: 1;
+} */
+/* 
+.container-2 {
+  display: inline-block;
+  display: none;
+  opacity: 0.5;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  right: 142px;
+  border: 3px solid blue;
+  margin: 1rem;
+  z-index: 1;
+} */
+/* .container-3 {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 1px;
+  top: 1px;
+  border: 3px solid red;
+  margin: 1rem;
+} */
+/* position: relative;
+  right: 142px; */
+
+/* .box-1 {
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 3px solid yellow;
+} */
+
+/* .ordered {
+  list-style-type: disc;
+}
+
+.unordered {
+  list-style: square url("../assets/sqpurple.gif") inside;
+} */
+
+/* table,
+th,
+td {
+  border: 1px solid red;
+  border-collapse: collapse;
+} */
