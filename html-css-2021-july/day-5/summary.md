@@ -29,26 +29,28 @@ However in inline CSS. '`style`' attribute is used within the element for stylin
 
 ![Inline CSS](https://lucidar.me/en/web-dev-class/files/en-inline-css-syntax.png)
 
-```HTML
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="link to CSS file"> <!-- Linking External CSS file -->
-        <style>
-            <!-- Adding Internal CSS -->
-            p{
-                color:red;
-            }
-        </style>
-    </head>
-    <body>
-        <p style="color: red">Hello World</p> <!-- Inline CSS Example -->
-    </body>
-    </html>
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="link to CSS file" />
+    <!-- Linking External CSS file -->
+    <style>
+      /* Adding Internal CSS */
+      p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p style="color: red">Hello World</p>
+    <!-- Inline CSS Example -->
+  </body>
+</html>
 ```
 
 Inline CSS and Internal CSS are not preferred much as they make HTML document too big and confusing. So using external CSS file is reccomended.
@@ -77,8 +79,11 @@ Simple selectors are tags, classes and id.
 
 Tags are reffered by simply tagnames on CSS file.
 
-```CSS
-p{ color: red; font-size: 30px}
+```css
+p {
+  color: red;
+  font-size: 30px;
+}
 ```
 
 For example, paragraph element in HTML document is referred by `p` tag only.
@@ -86,18 +91,16 @@ However, using only tagname to select HTML elements can produce unexpected resul
 
 Class is reffered by using full-stop sign '`.`' .
 
-```HTML
+```html
 <body>
-    <p class="first-class">
-        Hello World
-    </p>
+  <p class="first-class">Hello World</p>
 </body>
 ```
 
-```CSS
-.first-class{
-    color:red;
-    font-size:30px;
+```css
+.first-class {
+  color: red;
+  font-size: 30px;
 }
 ```
 
@@ -106,7 +109,7 @@ Multiple elements can have same class and one element can also have multiple cla
 Concept of class is to add appriopriate styling to same type of elements in the design layout of the page.
 Using multiple classes in a single element is done by simply seperating two classes name with a space.
 
-```HTML
+```html
 <p class="first-class border-class">Hello World</p>
 ```
 
@@ -114,18 +117,16 @@ Here, paragraph elements has two classes `first-class` and `border-class` sepera
 
 IDs are reffered in the CSS document by '`#`' number sign.
 
-```HTML
+```html
 <body>
-    <p id="element-1">
-        Hello World
-    </p>
+  <p id="element-1">Hello World</p>
 </body>
 ```
 
-```CSS
-#element-1{
-    color:red;
-    font-size:30px;
+```css
+#element-1 {
+  color: red;
+  font-size: 30px;
 }
 ```
 
@@ -197,37 +198,31 @@ px, rem, em, vh, vw are used in CSS. But SI units can also be used for this purp
   </summary>
     Relative to the font-size of the element (2em means 2 times the size of the current font)	
     
-```HTML
-    <!DOCTYPE html>
-    <html>
+```html
+<!DOCTYPE html>
+<html>
     <head>
-    <style>
-    p {
-        font-size: 16px;
-        line-height: 2em;
-    }
-
-    div {
-    font-size: 30px;
-    border: 1px solid black;
-    }
-
-    span {
-    font-size: 0.5em;
-    }
-    </style>
-
+        <style>
+        p {
+            font-size: 16px;
+            line-height: 2em;
+        }
+        div {
+            font-size: 30px;
+            border: 1px solid black;
+        }
+        span {
+            font-size: 0.5em;
+        }
+        </style>
     </head>
     <body>
-
-    <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
-    <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
-    <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
-    <div>The font-size of the div element is set to 30px. <span>The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.</div>
-
+        <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+        <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+        <p>These paragraphs have a calculated line-height of: 2x16px = 32px.</p>
+        <div>The font-size of the div element is set to 30px. <span>The span element inside the div element has a font-size of 0.5em, which equals to 0.5x30 = 15px</span>.</div>
     </body>
-    </html>
-
+</html>
 ````
 </details>
 
@@ -238,40 +233,45 @@ px, rem, em, vh, vw are used in CSS. But SI units can also be used for this purp
     <br/>
     Relative to font-size of the root element
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    html {
-    font-size:16px;
-    }
+      html {
+        font-size: 16px;
+      }
 
-    div {
-    font-size: 3rem;
-    border: 1px solid black;
-    }
+      div {
+        font-size: 3rem;
+        border: 1px solid black;
+      }
 
-    #top-div {
-    font-size: 2rem;
-    border: 1px solid red;
-    }
+      #top-div {
+        font-size: 2rem;
+        border: 1px solid red;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <p>The font-size of this document is 16px.</p>
 
     <div id="top-div">
-    The font-size of this div element is 2rem, which translates to 2 x the browser's font size.
-    <div>The font-size of this div element is 3rem. It also shows that it does not inherit from its parent element font size.</div>
+      The font-size of this div element is 2rem, which translates to 2 x the
+      browser's font size.
+      <div>
+        The font-size of this div element is 3rem. It also shows that it does
+        not inherit from its parent element font size.
+      </div>
     </div>
 
-    <p>The rem unit sets the font-size relative to the browsers base font-size, and will not inherit from its parents.</p>
-
-    </body>
-    </html>
-````
+    <p>
+      The rem unit sets the font-size relative to the browsers base font-size,
+      and will not inherit from its parents.
+    </p>
+  </body>
+</html>
+```
 
 </details>
 
@@ -281,26 +281,27 @@ px, rem, em, vh, vw are used in CSS. But SI units can also be used for this purp
     </summary>
         Relative to 1% of the width of the viewport. Viewport = the browser window size. If the viewport is 50cm wide, 1vw = 0.5cm.
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    h1 {
-    font-size: 20vw;
-    }
+      h1 {
+        font-size: 20vw;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h1>Hello</h1>
 
-    <p>Resize the width of the browser window to see how the font-size of h1 changes.</p>
+    <p>
+      Resize the width of the browser window to see how the font-size of h1
+      changes.
+    </p>
     <p>1vh = 1% of viewport height.</p>
     <p>The vw unit is not supported in IE8 and earlier.</p>
-
-    </body>
-    </html>
+  </body>
+</html>
 ```
 
 </details>
@@ -311,24 +312,26 @@ px, rem, em, vh, vw are used in CSS. But SI units can also be used for this purp
     </summary>
   Relative to 1% of the height of the viewport. Viewport = the browser window size. If the viewport is 50cm high, 1vh = 0.5cm.
 
-```HTML
-
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    h1 {
-    font-size: 20vh;
-    }
+      h1 {
+        font-size: 20vh;
+      }
     </style>
-    </head>
-    <body>
+  </head>
+  <body>
     <h1>Hello</h1>
-    <p>Resize the height of the browser window to see how the font-size of h1 changes.</p>
+    <p>
+      Resize the height of the browser window to see how the font-size of h1
+      changes.
+    </p>
     <p>1vh = 1% of viewport height.</p>
     <p>The vh unit is not supported in IE8 and earlier.</p>
-    </body>
-    </html>
+  </body>
+</html>
 ```
 
 </details>
@@ -356,24 +359,25 @@ The CSS background properties are used to add background effects for elements.
 
 The CSS border properties allow you to specify the style, width, and color of an element's border.
 
-```HTML
-   <!DOCTYPE html>
-   <html>
-   <head>
-   <style>
-   p {
-   border: 5px solid red;
-   }
-   </style>
-   </head>
-   <body>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p {
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>The border Property</h2>
 
-   <h2>The border Property</h2>
-
-   <p>This property is a shorthand property for border-width, border-style, and border-color.</p>
-
-   </body>
-   </html>
+    <p>
+      This property is a shorthand property for border-width, border-style, and
+      border-color.
+    </p>
+  </body>
+</html>
 ```
 
 <br/>
@@ -421,31 +425,39 @@ The CSS box model is essentially a box that wraps around every HTML element. It 
 
 ![Box Model](https://www.kasandbox.org/programming-images/misc/boxmodel.png)
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    div {
-    background-color: lightgrey;
-    width: 300px;
-    border: 15px solid green;
-    padding: 50px;
-    margin: 20px;
-    }
+      div {
+        background-color: lightgrey;
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h2>Demonstrating the Box Model</h2>
 
-    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+    <p>
+      The CSS box model is essentially a box that wraps around every HTML
+      element. It consists of: borders, padding, margins, and the actual
+      content.
+    </p>
 
-    <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-
-    </body>
-    </html>
-
+    <div>
+      This text is the content of the box. We have added a 50px padding, 20px
+      margin and a 15px green border. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+  </body>
+</html>
 ```
 
 Here, total width of div is equal to 300px + 15px * 2(border) + 20px *2(margin) + 50px \*2(padding).
@@ -464,42 +476,47 @@ The four links states are:
 - a:hover - a link when the user mouses over it
 - a:active - a link the moment it is clicked
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    /* unvisited link */
-    a:link {
-    color: red;
-    }
+      /* unvisited link */
+      a:link {
+        color: red;
+      }
 
-    /* visited link */
-    a:visited {
-    color: green;
-    }
+      /* visited link */
+      a:visited {
+        color: green;
+      }
 
-    /* mouse over link */
-    a:hover {
-    color: hotpink;
-    }
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
 
-    /* selected link */
-    a:active {
-    color: blue;
-    }
+      /* selected link */
+      a:active {
+        color: blue;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h2>CSS Links</h2>
-    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
-    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
-    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
-
-    </body>
-    </html>
-
+    <p>
+      <b><a href="default.asp" target="_blank">This is a link</a></b>
+    </p>
+    <p>
+      <b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS
+      definition in order to be effective.
+    </p>
+    <p>
+      <b>Note:</b> a:active MUST come after a:hover in the CSS definition in
+      order to be effective.
+    </p>
+  </body>
+</html>
 ```
 
 <br/>
@@ -518,60 +535,57 @@ The CSS list properties allow you to:
 - Set an image as the list item marker
 - Add background colors to lists and list items
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    ul.a {
-    list-style-type: circle;
-    }
+      ul.a {
+        list-style-type: circle;
+      }
 
-    ul.b {
-    list-style-type: square;
-    }
+      ul.b {
+        list-style-type: square;
+      }
 
-    ol.c {
-    list-style-type: upper-roman;
-    }
+      ol.c {
+        list-style-type: upper-roman;
+      }
 
-    ol.d {
-    list-style-type: lower-alpha;
-    }
+      ol.d {
+        list-style-type: lower-alpha;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h2>Lists</h2>
     <p>Example of unordered lists:</p>
     <ul class="a">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Coca Cola</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
     </ul>
 
     <ul class="b">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Coca Cola</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
     </ul>
 
     <p>Example of ordered lists:</p>
     <ol class="c">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Coca Cola</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
     </ol>
 
     <ol class="d">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Coca Cola</li>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Coca Cola</li>
     </ol>
-
-    </body>
-    </html>
-
+  </body>
+</html>
 ```
 
 <br/>
@@ -596,14 +610,16 @@ A block-level element always starts on a new line and takes up the full width av
 
 Examples of block-level elements:
 
-```HTML
-    <div>
-    <h1> - <h6>
-    <p>
-    <form>
-    <header>
-    <footer>
-    <section>
+```html
+<div></div>
+<h1></h1>
+-
+<h6></h6>
+<p></p>
+<form></form>
+<header></header>
+<footer></footer>
+<section></section>
 ```
 
 </details>
@@ -635,55 +651,67 @@ Also, with display: inline-block, the top and bottom margins/paddings are respec
 
 Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements.
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    span.a {
-    display: inline; /* the default for span */
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid blue;
-    background-color: yellow;
-    }
+      span.a {
+        display: inline; /* the default for span */
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
 
-    span.b {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid blue;
-    background-color: yellow;
-    }
+      span.b {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
 
-    span.c {
-    display: block;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
-    border: 1px solid blue;
-    background-color: yellow;
-    }
+      span.c {
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        border: 1px solid blue;
+        background-color: yellow;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h1>The display Property</h1>
 
     <h2>display: inline</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="a">Aliquam</span> <span class="a">venenatis</span> gravida
+      nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
 
     <h2>display: inline-block</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="b">Aliquam</span> <span class="b">venenatis</span> gravida
+      nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
 
     <h2>display: block</h2>
-    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat scelerisque elit sit amet consequat. Aliquam erat volutpat. <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet. </div>
-
-    </body>
-    </html>
-
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      consequat scelerisque elit sit amet consequat. Aliquam erat volutpat.
+      <span class="c">Aliquam</span> <span class="c">venenatis</span> gravida
+      nisl sit amet facilisis. Nullam cursus fermentum velit sed laoreet.
+    </div>
+  </body>
+</html>
 ```
 
 </details>
@@ -715,30 +743,28 @@ Static positioned elements are not affected by the top, bottom, left, and right 
 
 An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    div.static {
-    position: static;
-    border: 3px solid #73AD21;
-    }
+      div.static {
+        position: static;
+        border: 3px solid #73ad21;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h2>position: static;</h2>
 
-    <p>An element with position: static; is not positioned in any special way; it is
-    always positioned according to the normal flow of the page:</p>
+    <p>
+      An element with position: static; is not positioned in any special way; it
+      is always positioned according to the normal flow of the page:
+    </p>
 
-    <div class="static">
-    This div element has position: static;
-    </div>
-
-    </body>
-    </html>
+    <div class="static">This div element has position: static;</div>
+  </body>
+</html>
 ```
 
 </details>
@@ -751,31 +777,29 @@ An element with position: relative; is positioned relative to its normal positio
 
 Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    div.relative {
-    position: relative;
-    left: 30px;
-    border: 3px solid #73AD21;
-    }
+      div.relative {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73ad21;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h2>position: relative;</h2>
 
-    <p>An element with position: relative; is positioned relative to its normal position:</p>
+    <p>
+      An element with position: relative; is positioned relative to its normal
+      position:
+    </p>
 
-    <div class="relative">
-    This div element has position: relative;
-    </div>
-
-    </body>
-    </html>
-
+    <div class="relative">This div element has position: relative;</div>
+  </body>
+</html>
 ```
 
 </details>
@@ -788,33 +812,32 @@ An element with position: fixed; is positioned relative to the viewport, which m
 
 A fixed element does not leave a gap in the page where it would normally have been located.
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    div.fixed {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    border: 3px solid #73AD21;
-    }
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73ad21;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h2>position: fixed;</h2>
 
-    <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+    <p>
+      An element with position: fixed; is positioned relative to the viewport,
+      which means it always stays in the same place even if the page is
+      scrolled:
+    </p>
 
-    <div class="fixed">
-    This div element has position: fixed;
-    </div>
-
-    </body>
-    </html>
-
+    <div class="fixed">This div element has position: fixed;</div>
+  </body>
+</html>
 ```
 
 </details>
@@ -829,41 +852,43 @@ However; if an absolute positioned element has no positioned ancestors, it uses 
 
 <b>Note</b> : A "positioned" element is one whose position is anything except static.
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    div.relative {
-    position: relative;
-    width: 400px;
-    height: 200px;
-    border: 3px solid #73AD21;
-    }
+      div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
 
-    div.absolute {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 100px;
-    border: 3px solid #73AD21;
-    }
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+      }
     </style>
-    </head>
-    <body>
-
+  </head>
+  <body>
     <h2>position: absolute;</h2>
 
-    <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+    <p>
+      An element with position: absolute; is positioned relative to the nearest
+      positioned ancestor (instead of positioned relative to the viewport, like
+      fixed):
+    </p>
 
-    <div class="relative">This div element has position: relative;
-    <div class="absolute">This div element has position: absolute;</div>
+    <div class="relative">
+      This div element has position: relative;
+      <div class="absolute">This div element has position: absolute;</div>
     </div>
-
-    </body>
-    </html>
-
+  </body>
+</html>
 ```
 
 </details>
@@ -876,37 +901,52 @@ An element with `position: sticky;` is positioned based on the user's scroll pos
 
 A sticky element toggles between `relative` and `fixed`, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like `position:fixed`).
 
-```HTML
-    <!DOCTYPE html>
-    <html>
-    <head>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
     <style>
-    div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    padding: 5px;
-    background-color: #cae8ca;
-    border: 2px solid #4CAF50;
-    }
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: #cae8ca;
+        border: 2px solid #4caf50;
+      }
     </style>
-    </head>
-    <body>
-
-    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+  </head>
+  <body>
+    <p>
+      Try to <b>scroll</b> inside this frame to understand how sticky
+      positioning works.
+    </p>
 
     <div class="sticky">I am sticky!</div>
 
     <div style="padding-bottom:2000px">
-    <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
-    <p>Scroll back up to remove the stickyness.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>
+        In this example, the sticky element sticks to the top of the page (top:
+        0), when you reach its scroll position.
+      </p>
+      <p>Scroll back up to remove the stickyness.</p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
+      <p>
+        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
+        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
+        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
+        molestiae voluptatibus.
+      </p>
     </div>
-
-    </body>
-    </html>
-
+  </body>
+</html>
 ```
 
 </details>
