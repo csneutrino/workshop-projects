@@ -7,4 +7,4 @@
 **Resources**
 
 - [Code From Workshop](./codes)
-- [Note](./note.md)
+- [Note](./summary.md)
