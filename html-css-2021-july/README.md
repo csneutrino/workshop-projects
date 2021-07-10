@@ -10,6 +10,7 @@
 - `day-1`: How web works ?
 - `day-3`: Emmet guide
 - `day-4`: Audio/Video, semantics, meta tags, emojis, entities, remaining formatting and form tags and css
+- `day-6`: Remaining CSS & Final Project
 </details>
 
 <details>
@@ -35,7 +36,8 @@
     </summary>
 
 - `day-1`: Roadmap
-- `day-2`: Diving in CSS. Selectors,comments, box model, margin, paddings, background, lists, links, tables    
+- `day-5`: Diving in CSS. Selectors,comments, box model, margin, paddings, background, lists, links, tables
+- `day-7`: Remaining Final Project & Git & Github
 </details>
 
 ---
