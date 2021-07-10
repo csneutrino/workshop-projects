@@ -1,5 +1,8 @@
-# workshop-project-1
-### This is the sample project for HTML/CSS workshop by csneutrino.
+# Day 6 - 7
+
+### Remaining CSS, Final Project, Git & Github
+
+> By Roshan Acharya & Gaurav Shah
 
 Find the source code here:
 
