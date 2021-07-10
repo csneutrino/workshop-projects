@@ -47,5 +47,5 @@
 - [Day 3 ( July 6 )](./day-3)
 - [Day 4 ( July 7 )](./day-4)
 - [Day 5 ( July 8 )](./day-5)
-- Day 6 ( July 9 )
-- Day 7 ( July 10 )
+- [Day 6 ( July 9 )](./day-6-7)
+- [Day 7 ( July 10 )](./day-6-7)
