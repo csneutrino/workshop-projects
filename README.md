@@ -20,7 +20,7 @@ Codes And Resources From CSneutrino Workshop.
         <a href="https://github.com/bytesagar">Sagar Karki</a>
     </summary>
 
-- `day-1`: Why Learn `Html/Css` ?
+- `day-1`: Why Learn `Html/CSS` ?
 - `day-3`: Forms and Tables
 </details>
 
